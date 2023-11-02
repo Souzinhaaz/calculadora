@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(90, 90, 90);
+}
+
+#calculadora {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+
+    height: 70%;
+    width: 20%;
+    padding: 20px;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+}
+
+#resultado {
+    height: 25%;
+    width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    flex-wrap: wrap;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+}
+
+.linha #dif{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+}
+
+.botao {
+    width: 20%;
+}
+
+.bot {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    background-color: grey;
+    color: white;
+}
+
+.bot:hover {
+    background-color: rgb(154, 154, 154);
+    transition: 0.5s;
+}
+
+.bot-cinza {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(179, 179, 179);
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.bot-cinza:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+.bot-laranja {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bot-laranja:hover {
+    background-color: rgb(255, 180, 41);
+}
+
+#maior.botao {
+    width: 45%;
+}
+
+.bot-maior {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.bot-maior:hover {
+    background-color: rgb(154, 154, 154);
+    transition: 0.5s;
+}
+
+.botao-linha {
+    width: 20%;
+}
+
+.botao-linha .bot-laranja .linha {
+    background-color: white;
+    height: 3px;
+    width: 25%;
+    
+}
+
+
+
+
+
