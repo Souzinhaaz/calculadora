@@ -10,82 +10,87 @@
     <main id="container">
 
         <div id="calculadora">
-            <div id="resultado">
-
+            <div id="tela">
+                <h1 id="update"></h1>
+                <h2 id="resultado"></h2>
             </div>
 
             <div id="botoes">
 
                 <div class="linha">
                     <div class="botao">
-                        <button class="bot-cinza">AC</button>
+                        <button class="bot-cinza" onclick="zerar()">AC</button>
                     </div>
                     <div class="botao">
-                        <button class="bot-cinza">+/-</button>
+                        <button class="bot-cinza" onclick="operar('+')">+/-</button>
                     </div>
                     <div class="botao">
-                        <button class="bot-cinza">%</button>
+                        <button class="bot-cinza" onclick="operar('%')">%</button>
                     </div>
                     <div class="botao">
-                        <button class="bot-laranja">÷</button>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="botao">
-                        <button class="bot">7</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot">8</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot">9</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-laranja">X</button>
+                        <button class="bot-laranja" onclick="operar('÷')">÷</button>
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="botao">
-                        <button class="bot">4</button>
+                        <button class="bot" onclick="insert('7')">7</button>
                     </div>
                     <div class="botao">
-                        <button class="bot">5</button>
+                        <button class="bot" onclick="insert('8')">8</button>
                     </div>
                     <div class="botao">
-                        <button class="bot">6</button>
+                        <button class="bot" onclick="insert('9')">9</button>
+                    </div>
+                    <div class="botao">
+                        <button class="bot-laranja" onclick="operar('x')">X</button>
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="botao">
+                        <button class="bot" onclick="insert('4')">4</button>
+                    </div>
+                    <div class="botao">
+                        <button class="bot" onclick="insert('5')">5</button>
+                    </div>
+                    <div class="botao">
+                        <button class="bot" onclick="insert('6')">6</button>
                     </div>
                     <div class="botao-linha">
-                        <button class="bot-laranja"><div class="linha"></div></button>
+                        <button class="bot-laranja" onclick="operar('-')">
+                            <div class="linha"></div>
+                        </button>
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="botao">
-                        <button class="bot">1</button>
+                        <button class="bot" onclick="insert('1')">1</button>
                     </div>
                     <div class="botao">
-                        <button class="bot">2</button>
+                        <button class="bot" onclick="insert('2')">2</button>
                     </div>
                     <div class="botao">
-                        <button class="bot">3</button>
+                        <button class="bot" onclick="insert('3')">3</button>
                     </div>
                     <div class="botao">
-                        <button class="bot-laranja">+</button>
+                        <button class="bot-laranja" onclick="operar('+')">+</button>
                     </div>
                 </div>
 
                 <div class="linha">
                     <div class="botao" id="maior">
-                        <button class="bot-maior">0</button>
+                        <button class="bot-maior" onclick="insert('0')">0</button>
                     </div>
                     <div class="botao">
                         <button class="bot">.</button>
                     </div>
                     <div class="botao-linha">
-                        <button class="bot-laranja"><div class="linha"></div>
-                        <div class="linha"></div></button>
+                        <button class="bot-laranja">
+                            <div class="linha"></div>
+                            <div class="linha"></div>
+                        </button>
                     </div>
                 </div>
 
