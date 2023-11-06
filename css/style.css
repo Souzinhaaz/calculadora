@@ -58,15 +58,14 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 70%;
-    flex-wrap: wrap;
+    height: 80%;
 }
 
 .linha {
     display: flex;
     margin: 2px;
     justify-content: space-around;
-    height: 15%;
+    height: 18%;
     width: 100%;
 }
 
@@ -79,7 +78,7 @@
 }
 
 .botao {
-    width: 20%;
+    width: 22%;
 }
 
 .bot {
@@ -99,7 +98,7 @@
 
 .bot-cinza {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +133,7 @@
 }
 
 #maior.botao {
-    width: 45%;
+    width: 47%;
 }
 
 .bot-maior {
@@ -156,7 +155,7 @@
 }
 
 .botao-linha {
-    width: 20%;
+    width: 22%;
 }
 
 .botao-linha .bot-laranja .linha {
@@ -164,3 +163,5 @@
     height: 3px;
     width: 25%;
     
+
+          
