@@ -33,6 +33,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    flex-direction: column;
+
     margin: 20px;
     height: 25%;
     width: 80%;
@@ -43,6 +45,11 @@
 #update {
     color: white;
     font-size: 3.0rem;
+}
+
+#resultado {
+    color: grey;
+    font-size: 2.0rem;
 }
 
 #botoes {
@@ -132,6 +139,9 @@
 
 .bot-maior {
     height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
     width: 100%;
     border: none;
     border-radius: 50px;
