@@ -1,18 +1,22 @@
 function insert(num) {
-    let numero = document.getElementById("update").innerHTML;
-
-    if (numero == 0) {
-        numero.innerHTML = num;
-    }
+    let tela = document.getElementById("update").innerHTML;
     
-    document.getElementById("update").innerHTML += num;
+    if (tela == 0) {
+        document.getElementById("update").innerHTML = num;
+    } else {
+        document.getElementById("update").innerHTML += num;
+    }
     
 };
 
 function operar(operacao) {
-    let valor = Number(document.getElementById("update").innerText);
-    console.log(valor);
-    document.getElementById("update").innerHTML += operacao;
+    let tela = Number(document.getElementById("update").innerText);
+
+    if (tela == 0) {
+        document.getElementById("update").innerHTML = 0;
+    } else {
+        document.getElementById("update").innerHTML += String(operacao);
+    }
 }
 
 function zerar() {
