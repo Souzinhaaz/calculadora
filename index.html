@@ -3,104 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Apple</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="https://icones.pro/wp-content/uploads/2021/04/icone-apple-symbole-logo-orange.png">
 </head>
 <body>
-    <main id="container">
-
-        <div id="calculadora">
-            <div id="tela">
-                <h1 id="update">0</h1>
-                <h2 id="resultado"></h2>
-            </div>
-
-            <div id="botoes">
-
-                <div class="linha">
-                    <div class="botao">
-                        <button class="bot-cinza" onclick="zerar()">AC</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-cinza" onclick="operar('+')">+/-</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-cinza" onclick="operar('%')">%</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-laranja" onclick="operar('÷')">÷</button>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="botao">
-                        <button class="bot" onclick="insert('7')">7</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('8')">8</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('9')">9</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-laranja" onclick="operar('x')">X</button>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="botao">
-                        <button class="bot" onclick="insert('4')">4</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('5')">5</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('6')">6</button>
-                    </div>
-                    <div class="botao-linha">
-                        <button class="bot-laranja" onclick="operar('-')">
-                            <div class="linha"></div>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="botao">
-                        <button class="bot" onclick="insert('1')">1</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('2')">2</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="insert('3')">3</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot-laranja" onclick="operar('+')">+</button>
-                    </div>
-                </div>
-
-                <div class="linha">
-                    <div class="botao" id="maior">
-                        <button class="bot-maior" onclick="insert('0')">0</button>
-                    </div>
-                    <div class="botao">
-                        <button class="bot" onclick="operar(',')">,</button>
-                    </div>
-                    <div class="botao-linha">
-                        <button class="bot-laranja">
-                            <div class="linha"></div>
-                            <div class="linha"></div>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-
+    <div class="fundo">
+        <h1>Gustavo de Souza Oliveira</h1>
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="erase()">E</button></td>
+                    <td><button class="botao" onclick="insert('÷')">÷</button></td>
+                    <td><button class="botao" onclick="insert('x')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 107px;" onclick="calculate()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 107px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
         </div>
-
-    </main>
-
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

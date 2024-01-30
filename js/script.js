@@ -1,24 +1,26 @@
+
 function insert(num) {
-    let tela = document.getElementById("update").innerHTML;
     
-    if (tela == 0) {
-        document.getElementById("update").innerHTML = num;
-    } else {
-        document.getElementById("update").innerHTML += num;
-    }
-    
-};
-
-function operar(operacao) {
-    let tela = Number(document.getElementById("update").innerText);
-
-    if (tela == 0) {
-        document.getElementById("update").innerHTML = 0;
-    } else {
-        document.getElementById("update").innerHTML += String(operacao);
-    }
+    let numero = document.getElementById("resultado").innerHTML;
+    document.getElementById("resultado").innerHTML = numero + num;
+    return numero;
 }
 
-function zerar() {
-    document.getElementById("update").innerHTML = 0;
-};
+function clean() {
+    document.getElementById("resultado").innerHTML = "";
+}
+
+function erase() {
+    let resultado = document.getElementById("resultado").innerHTML;
+    document.getElementById("resultado").innerHTML = resultado.substring(0, resultado.length -1)
+}
+
+function calculate() {
+    let resultado = document.getElementById("resultado").innerHTML;
+    resultado = resultado.replace("x", "*");
+    resultado = resultado.replace("÷", "/");
+    console.log(resultado);
+    if(resultado) {
+        document.getElementById("resultado").innerHTML = eval(resultado);
+    }
+}
